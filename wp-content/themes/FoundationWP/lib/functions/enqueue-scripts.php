@@ -1,4 +1,11 @@
 <?php
+/**
+ * ENQUEUE SCRIPTS
+ * Injects theme javascript files to the document
+ * Load additional scripts using the same method
+ * Reference: http://codex.wordpress.org/Function_Reference/wp_enqueue_script
+ * ----------------------------------------------------------------------------
+ */
 
 if (!function_exists('foundationwp_scripts')) :
   function foundationwp_scripts() {
