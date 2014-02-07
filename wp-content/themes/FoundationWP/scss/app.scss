@@ -1,7 +1,7 @@
 @import "settings";
 @import "foundation";
 
-// Or selectively include components
+// Selectively include  Foundation components
 // @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
@@ -38,3 +38,8 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// Roll your own components and styles here
+
+// @import
+//  "_bits/_example.scss"

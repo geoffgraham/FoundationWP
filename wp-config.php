@@ -1,8 +1,4 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
-
-
 /**
  * The base configurations of the WordPress.
  *
@@ -25,7 +21,6 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 * DON'T SET ENVIRONMENT SPECIFC SETTINGS IN THIS FILE, THEY BELONG IN local-config.php 
 *
 **/
-define( 'WPCACHEHOME', '/Users/Geoffrey/Sites/Geoff/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
     include( dirname( __FILE__ ) . '/local-config.php' );
 } else {

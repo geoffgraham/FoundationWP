@@ -23,10 +23,50 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+
+  <nav class="tab-bar show-for-small-only">
+    <section class="left-small">
+      <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+    </section>
+    <section class="middle tab-bar-section">
+      
+      <h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+
+    </section>
+  </nav>
+
+  <aside class="left-off-canvas-menu">
+    <?php foundationwp_mobile_off_canvas(); ?>
+  </aside>
+  
+        <div class="top-bar-container contain-to-grid show-for-medium-up">
+          <nav class="top-bar" data-topbar="">
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+              </li>          
+            </ul>
+            <section class="top-bar-section">
+                <?php foundationwp_top_bar_l(); ?>
+                <?php foundationwp_top_bar_r(); ?>
+            </section>
+          </nav>
+        </div>
+
+<header class="row" role="banner">
+  <div class="small-12 columns">
+    <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+    <h4 class="subheader"><?php bloginfo('description'); ?></h4>
+    <hr/>
+  </div>
+</header>
+
+<section class="container" role="document">
+  <div class="row">
