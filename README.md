@@ -1,4 +1,4 @@
-# Foundationn 5 WordPress Theme
+# Foundation 5 WordPress Theme
 
 A WordPresss theme for protoyping sites using ZURB's awesome Foundation 5 front-end framework. This is basically what it would look like to install Foundation into a WordPress theme directory using the command line.
 
