@@ -54,6 +54,10 @@ Foundation's Javascript files are located in `bower_components/`. They are initi
 
 All Javascript for the theme is enqueued by WordPress in `lib/functions/enqueue-scripts.php`. You can add your own scripts to `js/` and enqueue them the same way. This is the method recommended by WordPress.
 
+### Library
+
+I prefer using a directory that is dedicated for all my development assets, so I added `lib/` for you to do just that. This is where all the theme functions are kept and imported by `functions.php` but you can also use this directory to creates more directories for other assets, such as fonts, images, etc.
+
 ## Learn More About WordPress
 
 [WordPress Codex](http://codex.wordpress.org)
