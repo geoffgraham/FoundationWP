@@ -1,0 +1,16 @@
+/*
+ Theme Name:   FoundationWP
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  TwentyFourteen Child theme with Foundation 5.
+ Author:       Geoff Graham
+ Author URI:   http://geoffgraham.me
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         Foundation
+ Text Domain:  foundation-wp
+*/
+
+/* Import compiled stylesheet */
+@import 'lib/styles/style.css';
+
+/* Add custom styles here if not developing locally or using SASS */
