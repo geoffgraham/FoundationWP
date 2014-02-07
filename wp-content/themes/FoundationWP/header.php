@@ -1,11 +1,9 @@
 <?php
 /**
- * The Header for our theme
- *
- *
+ * HEADER
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage FoundationWP
+ * @since FoundationWP 1.0
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -17,6 +15,7 @@
 <!--[if !(IE 7) | !(IE 8) ]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
@@ -32,41 +31,46 @@
   <div class="inner-wrap">
 
   <nav class="tab-bar show-for-small-only">
+    
     <section class="left-small">
       <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-    </section>
+    </section> <!-- left-small -->
+    
     <section class="middle tab-bar-section">
       
       <h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 
-    </section>
+    </section> <!-- middle tab-bar-section -->
   </nav>
 
   <aside class="left-off-canvas-menu">
     <?php foundationwp_mobile_off_canvas(); ?>
-  </aside>
+  </aside> <!-- left-off-canvas-menu -->
   
-        <div class="top-bar-container contain-to-grid show-for-medium-up">
-          <nav class="top-bar" data-topbar="">
-            <ul class="title-area">
-              <li class="name">
-                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-              </li>          
-            </ul>
-            <section class="top-bar-section">
-                <?php foundationwp_top_bar_l(); ?>
-                <?php foundationwp_top_bar_r(); ?>
-            </section>
-          </nav>
-        </div>
+  <div class="top-bar-container contain-to-grid show-for-medium-up">
+    <nav class="top-bar" data-topbar="">
+      
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+        </li>          
+      </ul>
+      
+      <section class="top-bar-section">
+          <?php foundationwp_top_bar_l(); ?>
+          <?php foundationwp_top_bar_r(); ?>
+      </section> <!-- top-bar-section -->
+       
+    </nav> <!-- top-bar -->
+  </div> <!-- top-bar-container contain-to-grid show-for-medium-up -->
 
-<header class="row" role="banner">
-  <div class="small-12 columns">
-    <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-    <h4 class="subheader"><?php bloginfo('description'); ?></h4>
-    <hr/>
-  </div>
-</header>
+  <header class="row" role="banner">
+    <div class="small-12 columns">
+      <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+      <h4 class="subheader"><?php bloginfo('description'); ?></h4>
+      <hr/>
+    </div> <!-- small-12 columns -->
+  </header> <!-- row -->
 
-<section class="container" role="document">
-  <div class="row">
+  <section class="container" role="document">
+    <div class="row">

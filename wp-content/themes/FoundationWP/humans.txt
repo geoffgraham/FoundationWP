@@ -1,8 +1,20 @@
-/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
-/* zurb.com */
 /* humanstxt.org */
 
-/* SITE */
+/* FOUNDATION */
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+/* ---------------------------------- */
+
   Standards: HTML5, CSS3
   Components: jQuery, Orbit, Reveal
   Software: Coda, Textmate, Git
+
+
+/* FOUNDATION WP THEME */
+/* by Geoff Graham */
+/* geoffgraham.me */
+/* ---------------------------------- */
+
+  Components: Foundation 5, WordPress
+  Software: Coda, CodeKit, Git
+  

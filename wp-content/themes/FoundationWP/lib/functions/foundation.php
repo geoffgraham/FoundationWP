@@ -1,4 +1,11 @@
 <?php
+/**
+ * FOUNDATION FUNCTIONS
+ * Required defaults for Foundations to work properly
+ * From FoundationPress: https://github.com/olefredrik/foundationpress
+ * ----------------------------------------------------------------------------
+ */
+
 // Pagination
 function foundationwp_pagination() {
 	global $wp_query;
@@ -31,9 +38,7 @@ function foundationwp_pagination() {
 	}
 }
 
-/**
- * A fallback when no navigation is selected by default.
- */
+// Fallback when no navigation is selected by default.
 function foundationwp_menu_fallback() {
 	echo '<div class="alert-box secondary">';
 	// Translators 1: Link to Menus, 2: Link to Customize
@@ -57,10 +62,8 @@ function foundationwp_active_nav_class( $classes, $item ) {
 }
 add_filter( 'nav_menu_css_class', 'foundationwp_active_nav_class', 10, 2 );
 
-/**
- * Use the active class of ZURB Foundation on wp_list_pages output.
- * From required+ Foundation http://themes.required.ch
- */
+// Use the active class of ZURB Foundation on wp_list_pages output.
+// From required+ Foundation http://themes.required.ch
 function foundationwp_active_list_pages_class( $input ) {
 
 	$pattern = '/current_page_item/';

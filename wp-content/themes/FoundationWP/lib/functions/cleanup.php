@@ -1,31 +1,32 @@
 <?php
-
 /**
- * Start cleanup functions
+ * CLEANUP FUNCTIONS
+ * Strips out many of the unneeded tags and classes added by WordPress
+ * Reference: http://wpengineer.com/1438/wordpress-header/
+ * Head and Images
  * ----------------------------------------------------------------------------
  */
-
 
 add_action('after_setup_theme','start_cleanup');
 
 function start_cleanup() {
 
-    // launching operation cleanup
+    // initialize cleanup
     add_action('init', 'cleanup_head');
 
     // remove WP version from RSS
     add_filter('the_generator', 'remove_rss_version');
 
-    // remove pesky injected css for recent comments widget
+    // remove injected css from recent comments widget
     add_filter( 'wp_head', 'remove_wp_widget_recent_comments_style', 1 );
 
     // clean up comment styles in the head
     add_action('wp_head', 'remove_recent_comments_style', 1);
 
-    // clean up gallery output in wp
+    // clean up gallery output
     add_filter('gallery_style', 'gallery_style');
     
-    // additional post related cleaning
+    // additional post-related cleaning
     add_filter('get_image_tag_class', 'image_tag_class', 0, 4);
     add_filter('get_image_tag', 'image_editor', 0, 4);
     add_filter( 'the_content', 'img_unautop', 30 );
@@ -33,7 +34,7 @@ function start_cleanup() {
 } 
 
 /**
- * Clean up head
+ * Head Cleanup
  * ----------------------------------------------------------------------------
  */
 
@@ -115,7 +116,7 @@ function gallery_style($css) {
 }
 
 /**
- * Clean up image tags
+ * Image Cleanup
  * ----------------------------------------------------------------------------
  */
 
